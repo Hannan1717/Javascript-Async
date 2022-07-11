@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Set Timeout</title>
+   </head>
+   <body>
+      <script>
+         const addElement = () => {
+            const header = document.createElement("h1");
+            header.textContent = "Muhammad Hannan";
+
+            document.body.appendChild(header);
+            console.log("hannan muncul");
+         };
+
+         setTimeout(addElement, 5000);
+         console.log("program selesai");
+         setTimeout(() => {
+            const header2 = document.createElement("h2");
+            header2.textContent = "Bonjour";
+
+            document.body.appendChild(header2);
+         }, 7000);
+      </script>
+   </body>
+</html>

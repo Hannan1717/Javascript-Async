@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <title>Slow</title>
+   </head>
+   <body>
+      <button id="buttontask">Click Me</button>
+      <script>
+         function slowLog(total) {
+            console.log("start");
+            for (let i = 0; i < total; i++) {
+               console.log(i);
+            }
+            console.log("end");
+         }
+
+         document.getElementById("buttontask").onclick = () => {
+            slowLog(50000);
+         };
+      </script>
+   </body>
+</html>
